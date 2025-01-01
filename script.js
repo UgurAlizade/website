@@ -492,3 +492,4 @@ mix.addEventListener('click', function() {
         
     }
 });
+/* salam */
