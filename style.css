@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+body,html {
+    width: 100%;
+    height: 100%;
+    background-color: #D6F5F9;
+    overflow-y: hidden;
+}
+.chemBottle {
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    border: solid 0.5vw rgb(169, 169, 169);
+    border-top: none;
+    display: flex;
+    justify-self: center;
+    left: 40%;
+    top: 30%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 3;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 1%;
+}
+li {
+    font-size: xx-large;
+}
+li:hover {
+    cursor: pointer;
+}
+.elements {
+    width: 39%;
+    height: 100%;
+    background-color: RGB(100, 100, 100) ;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.elements h1 {
+    text-align: center;
+    padding-bottom: 5%;
+    color: white;
+    padding-top: 1%;
+}
+.elements .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 1vw;
+    justify-content: center;
+    align-content: flex-start;
+}
+.chemElement {
+    width: 12.5%;
+    background-color: white;
+    height: 10%;
+}
+.chemElement p {
+    text-align: center;
+    font-size: 75%;
+    margin-top: 5%;
+    z-index: 3;
+}
+.chemElement img {
+    display: flex;
+    justify-self: center;
+    width: 65%;
+}
+#element1 {
+    width: 65%;
+}
+#element3 {
+    width: 70%;
+}
+#element4 {
+    width: 65%;
+    padding-left: 15%;
+}
+#element5 {
+    width: 65%;
+}
+#element6 {
+    width: 65%;
+    margin-top: 5%;
+}
+#element7 {
+    width: 80%;
+    margin-top: -15%;
+}
+#element8 {
+    width: 75%;
+    margin-top: -5%;
+    z-index: 2;
+}
+#element9 {
+    width: 80%;
+    margin-top: -7%;
+}
+#element10 {
+    width: 100%;
+    margin-top: -10%;
+}
+#element11 {
+    width: 34%;
+}
+#element12 {
+    margin-top: -8%;
+    width: 80%;
+}
+.chemElement:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.selected {
+    background-color: #d0d0d0;
+}
+.fa-xmark {
+    position: absolute;
+    left: 92%;
+    font-size: xx-large;
+    top: 1%;
+    color: red;
+    width: 7.5%;
+    height: 6%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-top: 0.5%;
+}
+.fa-xmark:hover {
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.liquidDispenser {
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    background-color: black;
+    left: 47.5%;
+    top: -1%;
+    /* transition: transform 1s;
+    transform: scaleY(14.8); */
+    display: none;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+    z-index: 1;
+}
+
+.liquid1 {
+    position: absolute;
+    width: 20%;
+    height: 0.1%;
+    border-top: none;
+    display: none;
+    justify-self: center;
+    left: 40%;
+    top: 79.5%;
+    background-color: red;
+    transform-origin: top;
+    transition: transform 1s;
+    /* transform: scaleY(-50);  */
+    z-index: 2;
+}
+.liquid2 {
+    position: absolute;
+    width: 20%;
+    height: 0.1%;
+    border-top: none;
+    display: none;
+    justify-self: center;
+    left: 40%;
+    top: 79.5%;
+    background-color: green;
+    transform-origin: top;
+    transition: transform 1s;
+    /* transform: scaleY(-50); */
+    z-index: 1;
+}
+.mix {
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    border-radius: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    left: 47.5%;
+    top: 85%;
+}
+.mix:hover {
+    cursor: pointer;
+    background-color: #333333;
+}
+.reaction {
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
