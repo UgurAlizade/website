@@ -59,7 +59,7 @@ chemElements.forEach(element => {
             counter++;
             element.index = id+1;
             console.log(element.index);
-
+ 
             if (element.index === 1) { 
                 liquid2.style.transform = 'none';
                 liquid1.style.backgroundColor = element.color;
