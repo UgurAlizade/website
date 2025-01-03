@@ -29,6 +29,8 @@ let zinc = chemElements[11];
 let selected = false;
 let color;
 let counter = 1;
+let index;
+let id = 0;
 
 sodium.color = "rgb(0, 0, 255)";
 chlorine.color = "rgb(0, 255, 0)";
@@ -46,9 +48,6 @@ zinc.color = "rgb(174, 219, 209)";
 leave.addEventListener('click', function() {
     elementsDiv.style.left = '-545px';
 });
-
-let index;
-let id = 0;
 
 chemElements.forEach(element => {
     element.addEventListener('click', function() {
