@@ -86,7 +86,7 @@ chemElements.forEach(element => {
             liquidDispenser.style.display = 'block';
             liquidDispenser.style.transition = "transform 1s";
             setTimeout(() => {
-                liquidDispenser.style.transform = "scaleY(15)";
+                liquidDispenser.style.transform = "scaleY(14.8)";
             }, 10);
             setTimeout(() => {
                 sound.play();
@@ -172,6 +172,7 @@ mix.addEventListener('click', function() {
         if (element.classList.contains('selected')) {
             twoElements.push(element.querySelector('p').textContent.toLowerCase())
             // count++
+            console.log(twoElements)
         }
     });
 
@@ -182,6 +183,7 @@ mix.addEventListener('click', function() {
         endElement = twoElements[0] + "-" + twoElements[1];
         console.log(endElement);
         reaction.innerText = reactions[endElement];
+        twoElements.length=0;
 
         newColor = window.getComputedStyle(liquid1).backgroundColor + "-" + window.getComputedStyle(liquid2).backgroundColor;
         console.log(colorReactions[newColor]);
@@ -191,4 +193,5 @@ mix.addEventListener('click', function() {
         liquid2.style.backgroundColor = colorReactions[newColor];
         
     }
+    
 });

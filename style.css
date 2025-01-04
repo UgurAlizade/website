@@ -99,7 +99,7 @@ li:hover {
 #element8 {
     width: 75%;
     margin-top: -5%;
-    z-index: 2;
+    /* z-index: 2; */
 }
 #element9 {
     width: 80%;
@@ -164,13 +164,13 @@ li:hover {
     height: 0.1%;
     border-top: none;
     display: none;
-    justify-self: center;
+    justify-self: center; 
     left: 40%;
     top: 79.5%;
     background-color: red;
     transform-origin: top;
     transition: transform 1s;
-    /* transform: scaleY(-50);  */
+    transform: scaleY(-50); 
     z-index: 2;
 }
 .liquid2 {
