@@ -8,81 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <ul>
-            <li><i class="fa-brands fa-elementor"></i></li>
-        </ul>
-    </header>
-
-    <div class="elements">
-        <h1>Elements</h1> <i class="fa-solid fa-xmark"></i>
-
     <div class="container">
-        <div class="chemElement">
-            <p>Sodium</p>
-            <img id="element1" src="images/sodium.png" alt="test">
-        </div>
-        <div class="chemElement">
-            <p>Chlorine</p>
-            <img id="element2" src="images/chlorine.png" alt="test">
-        </div>
-        <div class="chemElement">
-            <p>Magnesium</p>
-            <img id="element3" src="images/magnesium.png" alt="test">
-        </div>
-        <div class="chemElement">
-            <p>Oxygen</p>
-            <img id="element4" src="images/oxygen.png" alt="test">
-        </div>
-        <div class="chemElement">
-            <p>Iron</p>
-            <img id="element5" src="images/iron.png" alt="test">
-        </div>
-        <div class="chemElement">
-            <p>Carbon</p>
-            <img id="element6" src="images/carbon.png" alt="test">
-        </div>
-        <div class="chemElement">
-            <p>Sulfur</p>
-            <img id="element7" src="images/sulphur.png" alt="test">
-        </div>
-        <div class="chemElement">
-            <p>Hydrogen</p>
-            <img id="element8" src="images/hydrogen.png" alt="test">
-        </div>
-        <div class="chemElement">
-            <p>Nitrogen</p>
-            <img src="images/nitrogen.png" alt="test" id="element9">
-        </div>
-        <div class="chemElement">
-            <p>Copper</p>
-            <img src="images/copper.png" alt="test" id="element10">
-        </div>
-        <div class="chemElement">
-            <p>Calcium</p>
-            <img src="images/calcium.png" alt="test" id="element11">
-        </div>
-        <div class="chemElement">
-            <p>Zinc</p>
-            <img src="images/zinc.png" alt="test" id="element12">
-        </div>
+        <header class="header">
+            <div class="menu-icon">
+                <i class="fa-brands fa-elementor" id="brands"></i>
+            </div>
+            <div class="elements-div" id="elementsDiv">
+                <div class="elements-head">
+                    <h1>Elements</h1>
+                    <i class="fa-solid fa-xmark" id="xmark"></i>
+                    <hr>
+                </div>
+                <div class="elements-main">
+                    <input type="text"id="searchEl" placeholder="Search element...">
+                    <div class="elements"></div>
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="liquid-dispenser" id="liquidDispenser"></div>
+            <div class="chembottle">
+                <div class="liquid2" id="liquid2"></div>
+                <div class="liquid1" id="liquid1"></div>
+            </div>
+            <div class="mix-div">
+                <button class="mix" id="mix">Mix</button>
+            </div>
+        </section>
     </div>
-
-    </div>
-    
-       <div class="chemBottle"></div>
-          
-       <div class="liquidDispenser"></div>
-
-       <div class="liquid1"></div>
-       <div class="liquid2"></div>
-
-       <div class="mix">
-         <p>Mix</p>
-       </div>
-
-    <p class="reaction"></p>
-    
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
