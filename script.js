@@ -33,9 +33,18 @@ function addELement(){
        newP.innerText=elementsNames[i];
        elementS.appendChild(newDiv);
        newDiv.append(newP,newImg);
+       
     } 
+   
 }
   addELement();
+  let findElements=document.querySelectorAll(".element");
+  findElements.forEach(findPrasedymium =>{
+    if(findPrasedymium.children[0].textContent=="Praseodymium"){
+      findPrasedymium.style.fontSize="13px";
+    }
+  })
+  
   let el1;
   let el2;
   let elements=document.querySelectorAll(".element");
@@ -81,12 +90,19 @@ elements.forEach(element=>{
             if(element.name=="second"){
               liquid2.style.animation="liquid2-back 2s ease-in-out";
               checkliquid2=false;
+              setTimeout(()=>{
+                liquid2.style.backgroundColor="";
+              },2000)   
             }
             if(element.name=="first"){   
               liquid1.style.animation="liquid1-back 2s ease-in-out";
               if(checkliquid2 == true){
                 liquid2.style.animation="liquid2Backdown 2s ease-in-out forwards";
+                console.log(element);
               }
+              setTimeout(()=>{
+                liquid1.style.backgroundColor="";
+              },2000) 
             console.log(counter)
         }
     }})
