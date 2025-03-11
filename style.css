@@ -17,12 +17,20 @@ body,html{
 .container .header .menu-icon{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.container .header .menu-icon i{
+.container .header .menu-icon .menuicon-elements i{
     font-size:35px;
     margin: 33px 0px 0px 40px;
     cursor: pointer;
-    /* position: relative; */
+}
+.container .header .menu-icon .wa-gmail i{
+    font-size:35px;
+    margin: 33px 40px 0px 0px;
+    cursor: pointer;
+}
+.container .header .menu-icon .wa-gmail a{
+    color: black;
 }
 .container .header .menu-icon i:hover{
     opacity: .6;
@@ -93,7 +101,7 @@ body,html{
     gap: 10px;
 }
 .container .header .elements-div .elements-main .elements .element:hover{
-    opacity: .6;
+    opacity: 0.6 !important;
     cursor: pointer;
 }
 .container .header .elements-div .elements-main .elements .element img{
