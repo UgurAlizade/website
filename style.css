@@ -154,7 +154,23 @@ body,html{
     bottom: 0;
     z-index: 3;
 }
-
+.gptAnswer{
+    top: 90vh;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 3vh;
+}
+.ans {
+    width: 30%;
+    display: flex;
+    position: absolute;
+    left: 36vw;
+}
+.loadd {
+    position: absolute;
+    left: 48vw;
+    top: 90vh;
+}
 @keyframes dispenser{
     from{
        height: 0px;
